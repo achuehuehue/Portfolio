@@ -23,7 +23,7 @@ p{
     padding-bottom: 40px;
     position: fixed;
     top: 0px;
-    left: 0px;
+    left: -320px;
     bottom: 0px;
     width: 300px;
     background-color: rgb(85, 85, 85);
@@ -360,7 +360,7 @@ p{
 .card{
     width: 24vw;
     height: 38vw;
-    transition: all 0.3s;
+    transition: width 0.3s, height 0.3s;
     pointer-events: none;
 }
 
@@ -791,6 +791,13 @@ i{
         cursor: pointer;
     }
 
+}
+
+@media (min-width: 801px){
+    .sidebar{
+        left: -320px;
+        display: none;
+    }
 }
 
 
